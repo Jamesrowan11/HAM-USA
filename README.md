@@ -21,7 +21,11 @@ submissions show up in that site's Rowan Copy inbox and are emailed to the site 
 
 1. Make the change in Lovable (or edit `lovable-site/src/` directly). The team list is at the top of
    `lovable-site/src/components/site/Team.tsx`.
-2. Copy any changed files from Lovable into `lovable-site/src/`.
+2. Copy any changed files from Lovable into `lovable-site/src/`, unchanged.
+   Images uploaded in Lovable are imported as `src/assets/<name>.png.asset.json`; the real image isn't in
+   Lovable's code, so download it (the `url` in that JSON, on the Lovable preview site) and save it next to
+   the JSON as `src/assets/<original_filename>`. The build embeds it in the page. Keep images small (the
+   logo is a 3x-size copy, 458x144, about 8 KB); the full-size upload is kept as `*.original.png`.
 3. Rebuild (needs Node.js 20+):
    ```bash
    cd lovable-site && npm ci && npm run build

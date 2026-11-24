@@ -11,11 +11,7 @@ const markup = render();
 const title = "Harborline Asset Management, Inc.";
 const desc =
   "Harborline Asset Management, Inc. is a privately owned investment company. We invest our own capital in public stocks and in small, early-stage companies.";
-const favicon =
-  "data:image/svg+xml," +
-  encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="9" fill="#1b2a3e"/><circle cx="20" cy="20" r="7" fill="#d1a85a"/><rect x="6" y="22" width="28" height="12" fill="#1b2a3e"/><rect x="8" y="23.5" width="24" height="1.8" rx=".9" fill="#d1a85a"/><rect x="12" y="28" width="16" height="1.8" rx=".9" fill="#d1a85a" opacity=".6"/></svg>`,
-  );
+const favicon = `data:image/png;base64,${readFileSync("src/assets/favicon.png").toString("base64")}`;
 
 const html = `<!doctype html>
 <html lang="en">
