@@ -1,0 +1,18 @@
+{
+  "name": "ham-usa-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bash export/build.sh"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "tw-animate-css": "1.3.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.5",
+    "tailwindcss": "4.3.5",
+    "esbuild": "0.25.10"
+  }
+}
